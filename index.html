@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Stitch</title>
     <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
 </head>
 <body>
@@ -13,37 +13,48 @@
     Table
     Form-->
 <!--Navbar added-->
-<nav class="navbar navbar-expand-sm navbar-dark bg-primary">
-    <a class="navbar-brand" >Stitch</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item active">
-          <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="./page2.html">Stitch Family</a>
-        </li>
-      </ul>
-    </div>
-</nav>
+  <!--Added two tabs: home page and Stitch family page
+  navbar color of blue which is a class of bg-primary
+  added a button so when screen gets smaller they can 
+  click on button and chose which page to vist-->
+  <nav class="navbar navbar-expand-sm navbar-dark bg-primary">
+      <a class="navbar-brand" >Stitch</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./page2.html">Stitch Family</a>
+          </li>
+        </ul>
+      </div>
+  </nav>
 <!--End of Navbar-->
 
 <!--Section 1-->
+  <!--added a background color of light
+  and centered the title page and added a margin bottom 3 and top 5-->
+  
     <body class="bg-light"></body>
-        <h1 class="text-center mt-4">Stitch</h1>
+    <h1 class="text-center mt-5 mb-3 ">Stitch</h1>
 
 <!--Section 2-->
     <div class="container">
-    <!--added a class to img so img can wrap around the text-->
+    <!--added a class of float-end and imgshadow to img so img can wrap 
+      around the text
+      also changed the width to 500 so image can be adjusted-->
         <img 
             src="./images/Experiment-626.jpeg" 
             alt="Experiment 626"
             class="float-end imgshadow"
             width="500"
         />
+      <!--added a font size of 5 to the paragraphs making the font look bigger 
+      due to the image being bigger than the text-->
         <p class="fs-5">
             Stitch was created by Dr. Jumba, he is a mad scientist from space. Dr. Jumba created stitch, so he could cause chaos and distruction acroos 
             the glaxy. Stitch was known as Experiment 626. Before, creating experiment 626 Dr.Jumba created 625 others, but experiment 626 was designed 
@@ -58,9 +69,75 @@
         </p>  
     </div>
 
+<!--Section 3: Table-->
+    <!--added a title to the table and added text-center
+    a margin top of 5-->
+    <h1 class="text-center mt-5">Stitch's Family Memebers</h1>
+  <!--ADDED a class of container and a margin top and bottom-->
+  <div class="container mt-5 p-3">
+  <!--added a table stripped
+  changed color of evert other row to a light blue-->
+    <table class="table table-striped table-sm">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Name</th>
+          <th scope="col">Home</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="table-primary">
+          <th scope="row">1</th>
+          <td>Stich</td>
+          <td>Science Lab</td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>Lilo</td>
+          <td>Kauai</td>
+        </tr>
+        <tr class="table-primary">
+          <th scope="row">3</th>
+          <td>Nani</td>
+          <td>Kauai</td>
+        </tr>
+        <tr>
+          <th scope="row">4</th>
+          <td>Pleakley</td>
+          <td>Plorgonar</td>
+        </tr>
+        <tr class="table-primary">
+          <th scope="row">5</th>
+          <td>Dr. Jumba</td>
+          <td>Quelte Quan</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 
+<!--Section 4: Form -->
+<!--added a title to the form and a class of text center-->
+<h1 class="text-center">Join The Stitch Club!</h1>
+<!--for the form added a class of container and a margin top of 5-->
+  <div class="container mt-5">
+    <form>
+      <div class="form-row">
+        <div class="col">
+          <input type="text" class="form-control" placeholder="First name">
+        </div>
+        <div class="col">
+          <input type="text" class="form-control" placeholder="Last name">
+        </div>
+        <div class="form-group">
+          <input type="emial" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email">
+        </div>
+      </div>
+      <div class="text-center">
+      <button type="submit" class="btn btn-primary">Submit</button>
+      </div>
+    </form>
+  </div>
 
-
-    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+<script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
 </body>
 </html>
